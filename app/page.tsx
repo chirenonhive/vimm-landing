@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { ArrowRight, Code, Globe, Users, Video, Twitch, Youtube, Vote, ExternalLink } from 'lucide-react';
+import { ArrowRight, Code, Globe, Users, Twitch, Youtube, Vote, ExternalLink } from 'lucide-react';
 
 const LandingPage: React.FC = () => {
   return (
