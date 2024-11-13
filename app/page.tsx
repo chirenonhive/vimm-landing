@@ -4,17 +4,13 @@ import React from 'react';
 import { ArrowRight, Code, Globe, Users, Twitch, Youtube, Vote, ExternalLink } from 'lucide-react';
 
 // Types for configuration
-type SectionConfig = {
+interface SectionConfig {
   hero?: boolean;
   features?: boolean;
   timeline?: boolean;
   projects?: boolean;
   funding?: boolean;
-};
-
-type Props = {
-  config?: SectionConfig;
-};
+}
 
 // Navigation Component
 const Navigation = () => (
@@ -22,8 +18,8 @@ const Navigation = () => (
     <div className="text-2xl font-bold">VIMM Framework</div>
     <div className="space-x-6">
       <a href="#features" className="hover:text-blue-400">Features</a>
-      <a href="#timeline" className="hover:text-blue-400">Timeline</a>
       <a href="#projects" className="hover:text-blue-400">Projects</a>
+      <a href="#funding" className="hover:text-blue-400">Funding</a>
       <a href="https://github.com/VIMM-TV" className="hover:text-blue-400">GitHub</a>
     </div>
   </nav>
@@ -200,7 +196,7 @@ const ProjectsSection = () => {
 
 // Funding Section Component
 const FundingSection = () => (
-  <section className="py-20">
+  <section id="funding" className="py-20">
     <div className="container mx-auto px-4">
       <div className="max-w-4xl mx-auto bg-gradient-to-r from-blue-900/50 to-purple-900/50 rounded-2xl p-8 md:p-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
@@ -264,8 +260,10 @@ const defaultConfig: SectionConfig = {
   funding: true,
 };
 
-// Main Landing Page Component
-const LandingPage: React.FC<Props> = ({ config = defaultConfig }) => {
+// Main Page Component
+export default function Page() {
+  const config = defaultConfig;
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white">
       {config.hero && <HeroSection />}
@@ -276,6 +274,4 @@ const LandingPage: React.FC<Props> = ({ config = defaultConfig }) => {
       <Footer />
     </div>
   );
-};
-
-export default LandingPage;
+}
