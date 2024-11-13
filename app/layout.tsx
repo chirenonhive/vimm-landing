@@ -1,3 +1,5 @@
+import './globals.css';
+
 export default function RootLayout({
   children,
 }: {
@@ -6,10 +8,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>VIMM Framework - Open Source Streaming for Hive.</title>
+        <title>VIMM Framework - Open Source Streaming for Hive</title>
         <meta name="description" content="Build your own streaming platform on the Hive blockchain with our comprehensive, open-source framework." />
       </head>
-      <body>{children}</body>
+      <body className="antialiased">{children}</body>
     </html>
-  )
+  );
 }
