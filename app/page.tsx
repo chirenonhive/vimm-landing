@@ -128,7 +128,7 @@ const ProjectsSection = () => {
       name: "DaGamers",
       icon: <Twitch className="h-8 w-8" />,
       description: "Gaming-focused streaming platform built on Hive",
-      url: "https://dagamers.io",
+      url: "https://dagamers.xyz",
       status: "Active",
       tags: ["Gaming", "Live Streaming"]
     },
