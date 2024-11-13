@@ -1,7 +1,9 @@
-import React from 'react';
-import { ArrowRight, Code, Globe, Layers, Lock, Users } from 'lucide-react';
+'use client';
 
-const LandingPage = () => {
+import React from 'react';
+import { ArrowRight, Code, Globe, Users } from 'lucide-react';
+
+const LandingPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white">
       {/* Hero Section */}
