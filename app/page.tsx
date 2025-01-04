@@ -75,6 +75,10 @@ const FeaturesSection = () => {
             </div>
           ))}
         </div>
+        <div id="frame" style="width: 300px;margin: auto;padding-top: 2em;">
+          <iframe data-aa="2374197" src="//ad.a-ads.com/2374197?size=300x250" style="width:300px; height:250px; border:0px; padding:0; overflow:hidden; background-color: transparent;"></iframe>
+          <a style="display: block; text-align: right; font-size: 12px" id="frame-link" href="https://aads.com/campaigns/new/?source_id=2374197&amp;source_type=ad_unit&amp;partner=2374197">Advertise here</a>
+        </div>
       </div>
     </section>
   );
@@ -255,7 +259,7 @@ const Footer = () => (
 const defaultConfig: SectionConfig = {
   hero: true,
   features: true,
-  timeline: false,
+  timeline: true,
   projects: true,
   funding: true,
 };
